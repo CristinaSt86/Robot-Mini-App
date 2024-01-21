@@ -1,0 +1,67 @@
+:root {
+  --bg-color: #45badd;
+  --button-color: #ff3482;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pink-btn {
+  width: 200px;
+  background-color: var(--button-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  box-shadow: 2px 2px 12px 5px rgba(0, 0, 0, 0.2);
+  margin: 32px 0;
+  padding: 16px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  gap: 16px;
+}
+
+#home-btn {
+  margin: 32px;
+}
+
+#speech {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 10px;
+  min-width: 300px;
+  text-align: center;
+}
+
+img {
+  height: 400px;
+}
+
+/* stilizare pagina about */
+.about-page {
+  padding: 0 32px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  height: calc(100% - 150px);
+}
+
+.about-page p {
+  font-size: 20px;
+}
