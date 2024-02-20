@@ -1,7 +1,7 @@
 const button = document.getElementById("joke-button");
 const speech = document.getElementById("speech");
 
-// functie care ia date de la API
+// function to get the data from the API
 async function getDataFromAPI() {
   const url =
     "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,racist,sexist,explicit";
@@ -26,16 +26,16 @@ async function getDataFromAPI() {
   }
 }
 
-// functie pentru a randa gluma in html div
+// function to render the joke in html div
 function renderJoke(gluma) {
   speech.textContent = gluma;
 }
 
-// o alta posibilitate de a apela functia de render
+// another possbility to call the render function 
 // const gluma = getDataFromAPI();
 // renderJoke(gluma);
 
-//functie pentru a folosi voice rss ( se va citi gluma)
+//function to use the voice rss ( the joke will be read )
 function tellTheJoke(gluma) {
   VoiceRSS.speech({
     key: "5ff4b1b6ab8143f488a977bc3a2f2a9c",
@@ -51,7 +51,7 @@ function tellTheJoke(gluma) {
 
 button.addEventListener("click", getDataFromAPI);
 
-//adaugare functionalitate pt a deschide pagina About
+//added functionality to open the About page
 const aboutBtn = document.getElementById("about-page-button");
 aboutBtn.addEventListener("click", function () {
   window.location.href = "about.html";
