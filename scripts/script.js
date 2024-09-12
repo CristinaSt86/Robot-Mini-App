@@ -31,7 +31,7 @@ function renderJoke(gluma) {
   speech.textContent = gluma;
 }
 
-// another possbility to call the render function 
+// another possbility to call the render function
 // const gluma = getDataFromAPI();
 // renderJoke(gluma);
 
@@ -40,7 +40,7 @@ function tellTheJoke(gluma) {
   VoiceRSS.speech({
     key: "5ff4b1b6ab8143f488a977bc3a2f2a9c",
     src: gluma,
-    hl: "en-us",
+    hl: "en-us", 
     v: "Mike",
     r: 0,
     c: "mp3",
